@@ -207,6 +207,7 @@ ok.addEventListener('click', () => {
         }, 500);
         if (rotacao == 0 && passoX == 0 && passoY == 150) {
             clearInterval(verificacao);
+            location.reload();
         }
     }, 500);
 });
