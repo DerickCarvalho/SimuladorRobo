@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador</title>
+</head>
+<body>
+
+    <div class="instructions">
+        <h3>Para simular a movimentação do robô, fiz uma espécie de "jogo".</h3> <br> <br> <br>
+        <h1>Instruções</h1> <br> <br>
+        <p>1 - Utilize os direcionais cima e baixo para mover o robô para frente e para trás.</p> <br>
+        <p>2 - Utilize as setas laterais para girar o robô 90 graus para os lados desejados.</p> <br>
+        <p>3 - O botão "OK" finaliza a simulação, mostrando o resultado do algoritmo, e levando o robô de volta a posição inicial</p> <br>
+        <p>4 - O expaço de texto central mostrará todos os passos que o robô está executando.</p>
+    </div>
+
+    <div class="device">
+        <div class="screen">
+            <div class="room">
+                <img class="robo" id="robo" src="./img/robo.png" alt="">
+                <img src="./img/dirt.png" id="dirt" class="dirt" alt="dirt">
+                <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+                <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+                <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+                <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+                <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+                <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+                <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+                <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+            </div>
+        </div>
+
+        <div class="commands">
+            <input type="text" name="" id="commands" placeholder="Movimentos">
+            <input type="text" name="" id="coordenadas" placeholder="Coordenadas">
+            <input style="width: 100px;" id="resetar" type="button" value="Resetar">
+        </div>
+
+        <div class="control">
+            <div class="top">
+                <button id="up">⇧</button>
+            </div>
+
+            <div class="mid">
+                <button id="90deg_left">↶</button>
+                <button id="ok_button">OK</button>
+                <button id="90deg_right">↷</button>
+            </div>
+
+            <div class="bottom">
+                <button id="down">⇩</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
